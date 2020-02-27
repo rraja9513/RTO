@@ -1,0 +1,18 @@
+<table *ngIf="li">
+<tr *ngFor="let i of rowi">
+  <td>
+    <div class="imagebox">
+<img [src]="li[3*i]" alt="" class="img-fluid">
+<span class="imagebox-desc">{{li[3*i].caption}}</span>
+    </div>
+    <div class="imagebox">
+        <img [src]="li[3*i+1]" alt="" class="img-fluid">
+        <span class="imagebox-desc">{{li[3*i+1].caption}}</span>
+            </div>
+            <div class="imagebox">
+                <img [src]="li[3*i+2]" alt="" class="img-fluid">
+                <span class="imagebox-desc">{{li[3*i+2].caption}}</span>
+                    </div>
+  </td>
+</tr>
+</table>
